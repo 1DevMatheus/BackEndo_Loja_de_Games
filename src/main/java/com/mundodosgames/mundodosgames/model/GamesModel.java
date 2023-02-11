@@ -23,6 +23,17 @@ public class GamesModel {
 	private Long id;
 	
 	@NotBlank
+	private String produto;
+	
+	public String getProduto() {
+		return produto;
+	}
+
+	public void setProduto(String produto) {
+		this.produto = produto;
+	}
+
+	@NotBlank
 	@Size(max = 244)
 	private String nome;
 
