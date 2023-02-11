@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import com.mundodosgames.mundodosgames.model.Usuario;
 
 @Repository
-public interface UsuarioRepository JpaRepository<Usuario {
+public interface UsuarioRepository extends JpaRepository<Usuario {
 
 	public Optional<Usuario> findByUsuario(String usuario);
 	
